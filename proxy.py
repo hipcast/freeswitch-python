@@ -25,10 +25,11 @@ def handler(session, args):
     # did we get the secret code?
     if digits == '1234':
         # We're in! Do some cool stuff.
-        session.streamFile("/usr/local/freeswitch/scripts/easy/audio/authorized.wav")
+        session.streamFile("/usr/local/freeswitch/scripts/easy/audio/beep.wav")
+        session.streamFile("/usr/local/freeswitch/scripts/easy/audio/beep.wav")
 
     # play goodbye
-    session.streamFile("/usr/local/freeswitch/scripts/easy/audio/goodbye.wav")
+    session.streamFile("/usr/local/freeswitch/scripts/easy/audio/beep.wav")
 
     # hangup the SIP session
     session.hangup()
