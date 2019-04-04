@@ -1,13 +1,5 @@
 from freeswitch import *
 
-def fsapi( session, stream, env, args ):
-
-    # You can review the SIP info before you answer
-    print session
-    print args
-    handler(session, args)
-
-
 def handler(session, args):
 
     # pickup the line
